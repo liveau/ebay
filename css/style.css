@@ -301,7 +301,6 @@ ul.footer-menu li a:hover {
 
 @media (max-width: 767px) {
     .hero-header {
-        padding: 3em 1em 1em 1em;
         text-align: center;
         max-height: 550px;
     }
