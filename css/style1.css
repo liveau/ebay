@@ -1,0 +1,136 @@
+      <style>
+h1 {
+  color: #333;
+  font-family: arial, sans-serif;
+  margin: 1em auto;
+  width: 80%;
+}
+
+.tabordion {
+  color: #333;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 90%;
+}
+
+.tabordion input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.tabordion section {
+  display: block;
+}
+  .tabordion section input {
+    display: none;
+  }  
+.tabordion section label {
+  background: #ccc;
+  color: #777;
+  border:1px solid #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 20px;
+  position: relative;
+  width: 15%;
+  z-index:100;
+}
+
+.tabordion section article {
+  display: none;
+  left: 20%;
+  min-width: 300px;
+  padding: 0 0 0 21px;
+  position: absolute;  
+  top: 0;
+}
+
+.tabordion section article:after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  display: block;
+  left:-229px;
+  position: absolute;
+  top: 0;
+  width: 20%;
+  z-index:1;
+}
+
+.tabordion input[name="sections"]:checked + label { 
+  background: #fff;
+  color: #000;
+}
+
+.tabordion input[name="sections"]:checked ~ article {
+
+  color: #000;
+  display: block;
+}
+
+
+@media (max-width: 533px) {
+  
+  h1 {
+    width: 100%;
+  }
+
+  .tabordion {
+    width: 100%;
+  }
+  .tabordion section input {
+    display: none;
+  }  
+  .tabordion section label {
+    font-size: 1em;
+    width: 75px;
+  }  
+
+ .tabordion section article {
+    left: 120px;
+    min-width: 270px;
+  } 
+  
+  .tabordion section article:after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-199px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+  }  
+  
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    width: 96%;
+  }
+
+  .tabordion {
+    width: 96%;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  h1 {
+    width: 70%;
+  }
+
+  .tabordion {
+    width: 70%;
+  }
+}
+
+
+    </style>
