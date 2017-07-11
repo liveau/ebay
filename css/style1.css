@@ -1,16 +1,16 @@
-
+  
 .tabordion {
   color: #333;
   display: block;
   font-family: arial, sans-serif;
   position: relative;
-  width: 90%;
+
 }
 
 .tabordion input[name="sections"] {
-  left: -9999px;
+
   position: absolute;
-  top: -9999px;
+
 }
 
 .tabordion section {
@@ -27,32 +27,20 @@
   display: block;
   font-size: 1.2em;
   font-weight: bold;
-  padding: 15px 20px;
+  padding: 5px;
   position: relative;
-  width: 15%;
+  width: 20%;
   z-index:100;
 }
 
 .tabordion section article {
   display: none;
-  left: 20%;
-  min-width: 300px;
-  padding: 0 0 0 21px;
+  left: 22%;
+  padding: 5px;
   position: absolute;  
   top: 0;
 }
 
-.tabordion section article:after {
-  background-color: #fff;
-  bottom: 0;
-  content: "";
-  display: block;
-  left:-229px;
-  position: absolute;
-  top: 0;
-  width: 20%;
-  z-index:1;
-}
 
 .tabordion input[name="sections"]:checked + label { 
   background: #fff;
@@ -60,18 +48,12 @@
 }
 
 .tabordion input[name="sections"]:checked ~ article {
-
   color: #000;
   display: block;
 }
 
 
 @media (max-width: 533px) {
-  
-  h1 {
-    width: 100%;
-  }
-
   .tabordion {
     width: 100%;
   }
@@ -80,34 +62,19 @@
   }  
   .tabordion section label {
     font-size: 1em;
-    width: 75px;
+    width: 20%
   }  
 
  .tabordion section article {
-    left: 120px;
-    min-width: 270px;
+    left: 22%;
   } 
   
-  .tabordion section article:after {
-    background-color: #fff;
-    bottom: 0;
-    content: "";
-    display: block;
-    left:-199px;
-    position: absolute;
-    top: 0;
-    width: 200px;
 
-  }  
   
 }
 
 
 @media (max-width: 768px) {
-  h1 {
-    width: 96%;
-  }
-
   .tabordion {
     width: 96%;
   }
@@ -115,10 +82,6 @@
 
 
 @media (min-width: 1366px) {
-  h1 {
-    width: 70%;
-  }
-
   .tabordion {
     width: 70%;
   }
