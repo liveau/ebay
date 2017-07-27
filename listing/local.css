@@ -2,11 +2,10 @@
  * Source: https://github.com/awesomeWM/awesome-www
  * Originally created by Devit Schizoper (01.12.2006)
  */
-@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow|Open+Sans|Shadows+Into+Light+Two|Yanone+Kaffeesatz:300');
 
 body {
   color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial;
   font-size: 14px;
   margin: 0;
   display: block;
@@ -29,13 +28,13 @@ ul {
 }
 
 h1 {
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: cursive;
   color: #3f4c4b;
   font-size: 23px;
 }
 
 h2 {
-  font-family: 'Londrina Shadow', cursive;
+  font-family: cursive;
   font-size:60px;
   background-color: #33ccff;
   color: white;
